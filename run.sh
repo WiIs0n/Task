@@ -92,6 +92,10 @@ sed -i "s/.*bind-address.*/bind-address = 0.0.0.0/" /etc/mysql/my.cnf
 sed -i "s/.*bind-address.*/bind-address = 0.0.0.0/" /etc/mysql/mysql.conf.d/mysqld.cnf
 sed -i "s/user.*/user = www-data/" /etc/mysql/mysql.conf.d/mysqld.cnf
 
+apt-get install git
+rm /app/index.php
+git clone https://github.com/WiIs0n/Task /app
+
 if [[ ! -d $VOLUME_HOME/mysql ]]; then
     echo "=> An empty or uninitialized MySQL volume is detected in $VOLUME_HOME"
     echo "=> Installing MySQL ..."
@@ -110,10 +114,6 @@ if [[ ! -d $VOLUME_HOME/mysql ]]; then
 else
     echo "=> Using an existing volume of MySQL"
 fi
-
-apt-get install git
-rm /app/index.php
-git clone https://github.com/WiIs0n/Task /app
 
 echo "Starting supervisord"
 exec supervisord -n
