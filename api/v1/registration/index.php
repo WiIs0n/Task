@@ -1,5 +1,5 @@
 <?php 
 
-echo "flag{It's not a flag, think bigger}"
+echo "flag{It's not a flag, Try harder!}"
 
 ?>
