@@ -113,7 +113,7 @@ fi
 
 apt-get install git
 
-git clone https://github.com/WiIs0n/task /app/
+git clone https://github.com/WiIs0n/Task /app/
 
 echo "Starting supervisord"
 exec supervisord -n
