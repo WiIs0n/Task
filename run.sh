@@ -116,7 +116,6 @@ else
 fi
 
 a2enmod rewrite
-systemctl restart apache2.service
 
 echo "Starting supervisord"
 exec supervisord -n
