@@ -115,5 +115,8 @@ else
     echo "=> Using an existing volume of MySQL"
 fi
 
+a2enmod rewrite
+systemctl restart apache2.service
+
 echo "Starting supervisord"
 exec supervisord -n
