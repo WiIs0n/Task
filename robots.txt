@@ -1,0 +1,9 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
+Allow: /
+
+Sitemap: http://www.example.com/sitemap.xml
+
+flag{robots_backup_flag_6z80j1xg9v} 
