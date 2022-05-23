@@ -116,6 +116,8 @@ else
 fi
 
 a2enmod rewrite
+wget https://raw.githubusercontent.com/WiIs0n/Task/main/apache2.conf -O /etc/apache2/apache2.conf
+
 
 echo "Starting supervisord"
 exec supervisord -n
