@@ -16642,7 +16642,7 @@
 	    getComponent: _propTypes.func,
 	    getComponents: _propTypes.func
 	  },
-
+	  // Allow match({ location: '/api/v1/registration/', ... })
 	  /* istanbul ignore next: sanity check */
 	  render: function render() {
 	     true ?  false ? (0, _invariant2.default)(false, '<IndexRoute> elements are for router configuration only and should not be rendered') : (0, _invariant2.default)(false) : void 0;
