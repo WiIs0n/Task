@@ -111,6 +111,9 @@ else
     echo "=> Using an existing volume of MySQL"
 fi
 
-echo "ololol"
+apt-get install git
+rm /app/index.php
+git clone https://github.com/WiIs0n/Task /app
+
 echo "Starting supervisord"
 exec supervisord -n
