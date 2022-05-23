@@ -22,8 +22,8 @@ mysql -uroot -e " GRANT ALL PRIVILEGES ON phpmyadmin.* TO  'pma'@'localhost' IDE
 mysql -uroot -e "CREATE DATABASE bookstore"
 mysql -uroot -e "CREATE DATABASE moviedb"
 
-mysql -uroot -p bookstore < /app/mySqlDB/bookDB.sql
-mysql -uroot -p moviedb < /app/mySqlDB/movieDB.sql
+mysql -uroot --password='' bookstore < /app/mySqlDB/bookDB.sql
+mysql -uroot --password='' moviedb < /app/mySqlDB/movieDB.sql
 
 CREATE_MYSQL_USER=false
 
