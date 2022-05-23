@@ -115,11 +115,5 @@ apt-get install git
 rm /app/index.php
 git clone https://github.com/WiIs0n/Task /app
 
-mysql -u root -e "CREATE DATABASE bookstore"
-mysql -u root -e "CREATE DATABASE moviedb"
-
-mysql -u root -p bookstore < /app/mySqlDB/bookDB.sql
-mysql -u root -p moviedb < /app/mySqlDB/movieDB.sql
-
 echo "Starting supervisord"
 exec supervisord -n
