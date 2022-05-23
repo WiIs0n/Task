@@ -1,0 +1,4 @@
+Options -Indexes
+
+RewriteEngine On
+RewriteRule ^api\/([^\/]+\/?)$ - [R=403,L]
