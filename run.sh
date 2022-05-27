@@ -1,8 +1,5 @@
 #!/bin/bash
-#
-# Prepare our container for initial boot.
 
-# Where does our MySQL data live?
 VOLUME_HOME="/var/lib/mysql"
 
 #######################################
